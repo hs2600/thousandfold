@@ -1,0 +1,106 @@
+# Site settings
+title: Thousandfold
+email: info@thousandfold.store
+description: >
+  Thousandfold online store
+lang: en-US
+
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: http://thousandfold.store # the base hostname & protocol for your site
+git_address: https://github.com/aksakalli/jekyll-doc-theme
+git_edit_address: https://github.com/aksakalli/jekyll-doc-theme/blob/gh-pages
+
+# theme options from https://bootswatch.com/
+# comment out this to use default Bootstrap
+bootwatch: lumen
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - .idea/
+  - .gitignore
+  - README.md
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+timezone: Europe/Berlin
+defaults:
+- scope:
+    path: _posts
+    type: posts
+  values:
+    layout: post
+    sectionid: blog
+
+- scope:
+    path: _docs
+    type: docs
+  values:
+    layout: docs
+    sectionid: docs
+    seo:
+      type: "WebPage"
+
+- scope:
+    path: _docs/contact
+    type: docs
+  values:
+    layout: docs-nonav
+    sectionid: contact
+    seo:
+      type: "WebPage" 
+
+- scope:
+    path: _docs/about
+    type: docs
+  values:
+    layout: default
+    sectionid: about
+    seo:
+      type: "WebPage"      
+
+- scope:
+    path: _docs/women
+    type: docs
+  values:
+    layout: docs-notitle
+    sectionid: women
+    seo:
+      type: "WebPage"      
+
+- scope:
+    path: _docs/men
+    type: docs
+  values:
+    layout: docs-notitle
+    sectionid: men
+    seo:
+      type: "WebPage"      
+
+- scope:
+    path: _docs/kids
+    type: docs
+  values:
+    layout: docs-notitle
+    sectionid: kids
+    seo:
+      type: "WebPage"                  
+
+collections:
+  docs:
+    permalink: /:collection/:path/
+    output: true
+  posts:
+    permalink: /blog/:year/:month/:day/:title/
+    output: true

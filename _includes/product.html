@@ -1,0 +1,71 @@
+
+<div class="row">
+    <div class="col col-md-7">
+        <div class="row">
+            <img src="{{ site.baseurl }}/img/{{ product.image }}" alt="{{ product.title }} product image" class="image" id="expandedImg">
+        </div>
+        <div class="row d-none d-lg-block">
+            <div class="preview">
+                <img src="{{ site.baseurl }}/img/{{ product.image }}" onclick="myFunction(this);">
+                {% for image in product.thumbnails %}
+                    <img src="{{ site.baseurl }}/img/{{ image }}" onclick="myFunction(this);">
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5">
+        <span class="product-title">{{ product.title }}</span>
+        <hr style="margin-top: 10px;">
+        <span class="featured">{{ product.tag }}</span>
+        <span class="product-price">${{ product.price }}</span>
+        <p>&nbsp;</p>
+        <p class="product-description">{{ product.description }}</p>
+        <p>&nbsp;</p>
+        <button class="buy-button snipcart-add-item btn btn-info enabled" style="width:100%;
+        font-family: Roboto Condensed;        
+        border-bottom: 5px solid rgb(136, 41, 41);
+        border-radius: 2px;
+        "
+        data-item-id="{{ product.id }}"
+        data-item-name="{{ product.title }}"
+        data-item-price="{{ product.price }}"
+        data-item-description="{{ product.description }}"
+        data-item-image="{{ site.baseurl }}/img/{{ product.image }}"
+        data-item-url="http://thousandfold.store{{ page.url }}"
+        data-item-custom1-name="Size"
+        data-item-custom1-options="Small|Medium|Large"
+        data-item-custom2-name="Color"
+        data-item-custom2-options="{{ product.colors | join: '|' }}">
+        ADD TO CART
+        </button>
+        <ul class="nav nav-pillsx" style="border-bottom: 3px solid #efefef;">
+            <li class="active"><a href="#info" data-toggle="tab"></a></li>
+           <!-- <li class="#"><a href="#policy" data-toggle="tab">REFUND POLICY</a></li> -->
+        </ul>
+        <div id="myTabContent" class="tab-content" style="border: 0px solid #efefef; padding: 10px;">
+            <div class="tab-pane fade active in" id="info">
+                <p><i>You can choose the size and color after you add the item to the cart.</i></p>
+            </div>
+            <div class="tab-pane fade" id="policy">
+                <p>I’m a Return and Refund policy. I’m a great place to let your customers know what to do in case they are dissatisfied with their purchase. Having a straightforward refund or exchange policy is a great way to build trust and reassure your customers that they can buy with confidence.</p>
+            </div>
+        </div>
+
+        <div class="row justify-content-md-center">
+            <div class="col-sm-6" style="padding-bottom: 5px;">
+                <button class="snipcart-checkout btn btn-primary enabled" style="text-align: center; font-weight: bold; padding: 5px; padding-left: 20px; padding-right: 20px;">CART <i class="fa fa-shopping-cart"></i></button>
+            </div>            
+            <div class="col-sm-6">
+                <button class="snipcart-customer-signin btn btn-primary enabled" style=" text-align: center; font-weight: bold; padding: 5px;">MY ACCOUNT</button>
+            </div>                        
+        </div>
+    </div>
+</div>
+  
+  <script>
+  function myFunction(imgs) {
+    var expandImg = document.getElementById("expandedImg");
+    expandImg.src = imgs.src;
+    expandImg.parentElement.style.display = "block";
+  }
+  </script>

@@ -1,0 +1,304 @@
+- id: 1
+  title: RAISED SNAPBACK
+  description: <i>Was $24.99 (20% off!)</i> <br> Raised trucker style snapback.
+  price: 19.99
+  category: men
+  subcategory: hats
+  tag: Sale
+  image: raisedsnapback.jpg
+  thumbnails:
+  colors:
+  - Burgundy
+  - Black
+  available: true  
+
+- id: 2
+  title: SUEDE CROWN
+  description: KINGDOM EST. 2018 SUEDE CROWN.
+  price: 39.99
+  category: men
+  subcategory: hats
+  tag: 
+  image: suedecrown.jpg
+  thumbnails:
+  - IMG_3393.jpg
+  colors:
+  - Brown/Black
+  - Black/Silver
+  available: true    
+
+- id: 3
+  title: ANGEL HALO
+  description: <i>Was $24.99 (20% off!)</i> <br> Soft pink 'Angel' embroidered halo.
+  price: 19.99
+  category: women
+  subcategory: hats
+  tag: Sale
+  image: angelhalo.jpg
+  thumbnails:
+  - IMG_5627.jpg
+  colors:
+  - Soft Pink
+  available: true    
+
+- id: 4
+  title: ALLEGIANCE BEANIE
+  description: BLACK ALLEGIANCE BEANIE.
+  price: 19.99
+  category: men
+  tag: 
+  subcategory: hats
+  image: IMG_4062.jpg
+  thumbnails:
+  - IMG_4120.jpg
+  - IMG_4115.jpg
+  colors:
+  - Black
+  available: true
+
+- id: 5
+  title: Heaven Come WT
+  description: <i>Was $19.99 (25% off!)</i> <br> Heaven Come Women's T is a heather gray, 90% Cotton, 10% Polyester, soft, slim-fit T shirt with vinyl print. 
+  price: 14.99
+  category: women
+  tag: Sale
+  subcategory: tops
+  image: IMG_0325.jpg
+  thumbnails:
+  - IMG_0358.jpg
+  - IMG_5100.jpg
+  - IMG_0363.jpg
+  colors:
+  - Heather Gray
+  available: true  
+
+- id: 6
+  title: VICTORY HOODIE
+  description: <i>Was $39.99 (25% off!) </i> <br> A burgundy, 50/50 poly/cotton blend sweatshirt.
+  price: 29.99
+  category: men
+  tag: Sale
+  subcategory: hoodies
+  image: IMG_3659.jpg
+  thumbnails:
+  - IMG_3430.jpg
+  - 515.jpg
+  - IMG_6188.jpg
+  colors:
+  - Burgundy
+  available: true  
+
+- id: 7
+  title: be humbled Hoodie
+  description: Denim blue, 50/50 poly/cotton blend hoodie. II Chronicles 7:14 embroidered on hood.
+  price: 44.99
+  category: men
+  subcategory: hoodies
+  tag: Featured
+  image: IMG_3184.jpg
+  thumbnails:
+  - IMG_3671.jpg
+  - IMG_3473.jpg
+  colors:
+  - Denim Blue
+  available: true  
+
+- id: 8
+  title: PRAY HOODIE
+  description: <i>Was $39.99 (25% off!) </i> <br> Vibrant red, 50/50 poly/cotton blend hoodie with vinyl print featuring Isaiah 43:18.
+  price: 29.99
+  category: men
+  tag: Sale
+  subcategory: hoodies
+  image: IMG_5680.jpg
+  thumbnails:
+  - IMG_5696.jpg
+  colors:
+  - Vibrant Red
+  available: true  
+
+- id: 9
+  title: ALL HAIL KING JESUS HOODIE
+  description: Hoodie is a 50/50 poly/cotton blend available in multiple colors. Praying hands image featured on front of hoodie. Front of sleeve 'All Hail King Jesus.' Back of sleeve 'Get Behind Me Satan.' Shoulder 'Pray.' symbol. Mark 8:36 embroidered on hood.
+  price: 59.99
+  category: men
+  subcategory: hoodies
+  tag: 
+  image: newproduct.png
+  thumbnails:
+  - newproduct.png
+  colors:
+  - Black
+  - Navy
+  - White
+  available: false
+
+- id: 10
+  title: Kingdom Come Men's T
+  description: <i>Was $24.99 (20% off!), now $20.00 or 2 for $15.00 </i> <br> Kingdom Come Men's T-Shirt is 100% cotton with vinyl print available in black and white. 'Long Live Jesus.' featured on sleeve folded up.
+  price: 19.99
+  category: men
+  subcategory: shirts
+  tag: Sale
+  image: IMG_6369.jpg
+  thumbnails:
+  - IMG_6371.jpg
+  - IMG_6656.jpg
+  - IMG_6539.jpg
+  colors:
+  - White
+  - Black
+  available: true  
+
+- id: 11
+  title: Philippians 3:14 MT
+  description: 100% color Men's T-Shirt featured with embroidery referencing Philippians 3:14.
+  price: 19.99
+  category: men
+  tag: 
+  subcategory: shirts
+  image: IMG_6307.jpg
+  thumbnails:
+  - IMG_6316.jpg
+  - IMG_6298.jpg  
+  colors:
+  - White
+  available: true  
+
+- id: 12
+  title: VICTORY FROCKET LONG SLEEVE
+  description: <i>Was $44.99 (29% off!) </i> <br> 100% cotton, 'Victory' vinyl printed long sleeve shirt with 'Pray.' embroidered on the frocket.
+  price: 35.55
+  category: men
+  tag: Sale
+  subcategory: shirts
+  image: IMG_7157.jpg
+  thumbnails:
+  - IMG_7150.jpg
+  - IMG_6433.jpg
+  - IMG_6422.jpg
+  colors:
+  - White
+  available: true  
+
+- id: 13
+  title: Pray FROCKET Long Sleeve
+  description: <i>Was $39.99 </i> <br> 100% cotton, vinyl printed long sleeve shirt with 'Pray.' embroidered on the frocket. Rustic Green shirt features Colossians 3:2. Pop Blue shirt features John 14:31.
+  price: 35.55
+  category: men
+  subcategory: shirts
+  tag: Sale
+  image: IMG_3961.jpg
+  thumbnails:
+  - IMG_3946.jpg
+  - IMG_3973.jpg
+  colors:
+  - Pop Blue
+  - Rustic Green
+  available: true  
+
+- id: 14
+  title: ABERRANT WT
+  description: Aberrant women's t shirt is 100% cotton with praying hands image on front, featuring John 1:5 with vinyl print on back.
+  price: 24.99
+  category: women
+  subcategory: tops
+  tag: Featured
+  image: IMG_5296.jpg
+  thumbnails:
+  - IMG_5321.jpg
+  - IMG_5336.jpg
+  colors:
+  - White
+  - Black
+  - Navy
+  available: true  
+
+- id: 15
+  title: HEART OF FLESH WT
+  description: Vinyl printed 'Heart of Flesh' women's t-shirt is 40/60 poly/cotton blend.
+  price: 19.99
+  category: women
+  subcategory: tops
+  tag: Featured
+  image: IMG_4916.jpg
+  thumbnails:
+  - IMG_4821.jpg
+  - IMG_4696.jpg
+  colors:
+  - Heather Blue
+  available: true  
+
+- id: 16
+  title: PRAYING HANDS WT
+  description: <i>Was $19.99 (25% off!) </i> <br> Praying Hands Women's T-Shirt is 10/90 poly/cotton blend.
+  price: 14.99
+  category: women
+  subcategory: tops
+  tag: Sale
+  image: IMG_0278.jpg
+  thumbnails:
+  - IMG_0291.jpg
+  colors:
+  - Heather Dark Gray
+  available: true  
+ 
+- id: 17
+  title: TRANSCENDENT HOODIE
+  description: Black, 50/50 poly/cotton blend hoodie with vinyl print. John 1:5 featured on the back.
+  price: 39.99
+  category: men
+  subcategory: hoodies
+  tag: 
+  image: newproduct.png
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Black
+  available: false
+
+- id: 18
+  title: ANGEL BEANIE
+  description: Soft pink 'Angel' embroidered beanie.
+  price: 0.00
+  category: women
+  subcategory: hats
+  tag: Featured
+  image: IMG_5471.jpg
+  thumbnails:
+  - IMG_5517.jpg
+  colors:
+  - Soft Pink
+  available: false
+
+- id: 19
+  title: Pink Shirt
+  description: <i>Was $29.99 (27% off!)</i>
+  price: 12.99
+  category: kids
+  subcategory: tops
+  tag: Sale
+  image: IMG_1465-tn.jpg
+  thumbnails:
+  - IMG_1408.jpg
+  - IMG_1557.jpg
+  colors:
+  - Pink
+  available: true
+
+- id: 20
+  title: Test Product
+  description:
+  price: 1.00
+  category: Women
+  subcategory: tops
+  tag: 
+  image: IMG_5296.jpg
+  thumbnails:
+  - IMG_5321.jpg
+  colors:
+  - White
+  - Black
+  - Navy
+  available: false
+  

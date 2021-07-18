@@ -1,0 +1,22 @@
+
+<div class="col col-md-4 img-container" style="border: 1px solid #dfdfdf; padding: 25px;">
+    <div class="row" style="height: 450px;">
+        <h3>[{{ product.id }}] - {{ product.title }} (${{ product.price }})</h3>
+        <h5><i>{{ product.category }} > {{ product.subcategory }}</i></h5>
+        <i>Colors: {{ product.colors | join: ', ' }}</i><br>
+        <p class="product__description">{{ product.description }}</p>
+        <HR>
+            <span class="featured">{{ product.tag }}</span>
+            <a href="{{ site.baseurl }}/{{ product.category }}/{{ product.subcategory }}/{{ product.title | downcase | replace: " ", "-" | replace: ":", "" }}/">            
+            <img src="{{ site.baseurl }}/img/{{ product.image }}" alt="{{ product.title }} product image" class="img-preview" style="max-height:300px">
+        </a>
+    </div>
+    <div class="row d-lg-block">
+        <div class="preview">
+            <img src="{{ site.baseurl }}/img/{{ product.image }}" width="70px" style="max-height:60px">
+            {% for image in product.thumbnails limit:2 %}
+                <img src="{{ site.baseurl }}/img/{{ image }}" width="70px" style="max-height:60px">
+            {% endfor %}
+        </div>
+    </div>
+</div>

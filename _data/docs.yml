@@ -1,0 +1,15 @@
+- title: Men
+  docs:
+  - men/hats
+  - men/shirts
+  - men/hoodies
+
+- title: Women
+  docs:
+  - women/hats
+  - women/tops
+  - women/hoodies
+
+- title: Kids
+  docs:
+  - kids/tops

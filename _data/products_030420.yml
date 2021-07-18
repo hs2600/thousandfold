@@ -1,0 +1,303 @@
+- id: 1
+  title: RAISED SNAPBACK
+  description: Raised trucker style snapback.
+  price: 24.99
+  category: men
+  subcategory: hats
+  tag: featured
+  image: IMG_0300-tn.jpg
+  thumbnails:
+  - newproduct.png
+  colors:
+  - Burgundy
+  - Black
+
+- id: 2
+  title: SUEDE CROWN
+  description: KINGDOM EST. 2018 SUEDE CROWN.
+  price: 39.99
+  category: men
+  subcategory: hats
+  tag: featured
+  image: IMG_3227-tn.jpg
+  thumbnails:
+  - newproduct.png
+  colors:
+  - Brown/Black
+  - Black/Silver
+
+- id: 3
+  title: ANGEL HALO
+  description: Soft pink 'Angel' embroidered halo.
+  price: 24.99
+  category: women
+  subcategory: hats
+  tag: new
+  image: newproduct.png
+  thumbnails:
+  - newproduct.png
+  colors:
+  - Soft Pink
+
+- id: 4
+  title: ALLEGIANCE BEANIE
+  description: BLACK ALLEGIANCE BEANIE.
+  price: 0.00
+  category: men
+  tag: sale
+  subcategory: hats
+  image: IMG_0444-tn.jpg
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Black
+
+- id: 5
+  title: Heaven Come WT
+  description: Heaven Come Women's T is a heather gray, 90% Cotton, 10% Polyester, soft, slim-fit T shirt with vinyl print. 
+  price: 19.99
+  category: women
+  tag: featured
+  subcategory: tops
+  image: IMG_0363-tn.jpg
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Heather Gray
+
+- id: 6
+  title: VICTORY HOODIE
+  description: A burgundy, 50/50 poly/cotton blend sweatshirt.
+  price: 39.99
+  category: men
+  tag: featured
+  subcategory: hoodies
+  image: IMG_3430tn.jpg
+  thumbnails:
+  - IMG_3124.jpg
+  - IMG_3659.jpg
+  - IMG_3080.jpg
+  colors:
+  - Burgundy
+
+- id: 7
+  title: be humbled Hoodie
+  description: Denim blue, 50/50 poly/cotton blend hoodie. II Chronicles 7:14 embroidered on hood.
+  price: 44.99
+  category: men
+  subcategory: hoodies
+  tag: featured
+  image: IMG_3671-tn.jpg
+  thumbnails:
+  - IMG_3184.jpg
+  - IMG_3475s.jpg
+  - IMG_3503.jpg
+  colors:
+  - Denim Blue
+
+- id: 8
+  title: PRAY HOODIE
+  description: Vibrant red, 50/50 poly/cotton blend hoodie with vinyl print featuring Isaiah 43:18.
+  price: 39.99
+  category: men
+  tag: new
+  subcategory: hoodies
+  image: newproduct.png
+  thumbnails:
+  - newproduct.png
+  colors:
+  - Vibrant Red
+
+- id: 9
+  title: ALL HAIL KING JESUS HOODIE
+  description: Hoodie is a 50/50 poly/cotton blend available in multiple colors. Praying hands image featured on front of hoodie. Front of sleeve 'All Hail King Jesus.' Back of sleeve 'Get Behind Me Satan.' Shoulder 'Pray.' symbol. Mark 8:36 embroidered on hood.
+  price: 59.99
+  category: men
+  subcategory: hoodies
+  tag: new
+  image: newproduct.png
+  thumbnails:
+  - newproduct.png
+  colors:
+  - Black
+  - Navy
+  - White  
+
+- id: 10
+  title: KINGDOM COME MT
+  description: Kingdom Come Men's T-Shirt is 100% cotton with vinyl print available in black and white. 'Long Live Jesus.' featured on sleeve folded up.
+  price: 24.99
+  category: men
+  subcategory: shirts
+  tag: 
+  image: IMG_1027-tn.jpg
+  thumbnails:
+  - newproduct.png
+  colors:
+  - White
+  - Black
+
+- id: 11
+  title: Philippians 3:14 MT
+  description: 100% color Men's T-Shirt featured with embroidery referencing Philippians 3:14.
+  price: 19.99
+  category: men
+  tag: 
+  subcategory: shirts
+  image: newproduct.png
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - White
+
+- id: 12
+  title: VICTORY FROCKET LONG SLEEVE
+  description: 100% cotton, 'Victory' vinyl printed long sleeve shirt with 'Pray.' embroidered on the frocket.
+  price: 44.99
+  category: men
+  tag: 
+  subcategory: shirts
+  image: IMG_0394-tn.jpg
+  thumbnails:
+  - newproduct.png
+  colors:
+  - White
+
+- id: 13
+  title: PRAY FROCKET LONG SLEEVE
+  description: 100% cotton, vinyl printed long sleeve shirt with 'Pray.' embroidered on the frocket. Rustic Green shirt features Colossians 3:2. Pop Blue shirt features John 14:31.
+  price: 39.99
+  category: men
+  subcategory: shirts
+  tag: 
+  image: IMG_0662-tn.jpg
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Pop Blue
+  - Rustic Green
+
+- id: 14
+  title: ABERRANT WT
+  description: Aberrant women's t shirt is 100% cotton with praying hands image on front, featuring John 1:5 with vinyl print on back.
+  price: 24.99
+  category: women
+  subcategory: tops
+  tag: featured
+  image: IMG_0712-tn.jpg
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - White
+  - Black
+  - Navy
+
+- id: 15
+  title: HEART OF FLESH WT
+  description: Vinyl printed 'Heart of Flesh' women's t-shirt is 40/60 poly/cotton blend.
+  price: 19.99
+  category: women
+  subcategory: tops
+  tag: new
+  image: newproduct.png
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Heather Blue 
+
+- id: 16
+  title: PRAYING HANDS WT
+  description: Praying Hands Women's T-Shirt is 10/90 poly/cotton blend.
+  price: 19.99
+  category: women
+  subcategory: tops
+  tag: new
+  image: newproduct.png
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Heather Dark Gray
+
+- id: 17
+  title: TRANSCENDENT HOODIE
+  description: Black, 50/50 poly/cotton blend hoodie with vinyl print. John 1:5 featured on the back.
+  price: 39.99
+  category: men
+  subcategory: hoodies
+  tag: new
+  image: newproduct.png
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Black
+
+- id: 18
+  title: Sample Item 1
+  description: Sample item 1
+  price: 19.99
+  category: women
+  subcategory: tops
+  tag: featured
+  image: IMG_0549-tn.jpg
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Black
+  - Navy
+  - White    
+
+- id: 19
+  title: Sample Item 2
+  description: Sample item 2
+  price: 19.99
+  category: women
+  subcategory: tops
+  tag: 
+  image: IMG_0300-tn.jpg
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Black
+  - Navy
+  - White      
+
+- id: 20
+  title: Red Hoodie
+  description: Item description here
+  price: 19.99
+  category: women
+  subcategory: hoodies
+  tag: 
+  image: IMG_1115.jpg
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Red
+  - Navy
+
+- id: 21
+  title: Pink Kids Shirt
+  description: Item description here
+  price: 29.99
+  category: kids
+  subcategory: tops
+  tag: featured
+  image: IMG_1465-tn.jpg
+  thumbnails:
+  - IMG_1408.jpg
+  - IMG_1557.jpg
+  colors:
+  - Pink
+
+- id: 22
+  title: be humbled Hoodie
+  description: Denim blue, 50/50 poly/cotton blend hoodie. II Chronicles 7:14 embroidered on hood.
+  price: 44.99
+  category: women
+  subcategory: hoodies
+  tag: featured
+  image: IMG_0559-tn.jpg
+  thumbnails:
+  - newproduct.png  
+  colors:
+  - Denim Blue

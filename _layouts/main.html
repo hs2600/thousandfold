@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+{% include head.html %}
+
+<style>
+    body {
+    padding-top: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    color: black;
+    }
+</style>
+
+<body>
+
+    <div class="container-fluid" style="background-color: white; color:#000; height:60px; text-align: center;">
+        <a href="{{ site.baseurl }}/">
+            <img src="{{ site.baseurl }}/img/TF-logo_black.png" width="300px">
+        </a>
+    </div>
+
+    <nav class="navbar navbar-inverse" data-spy="affixx" data-offset-top="300">
+    {% include topnav.html %}
+    </nav>
+
+    <div class="page-content">
+        <div class="wrapper">
+            {{ content }}
+        </div>
+    </div>
+    {% include footer.html %}
+    {% include js_files.html %}
+
+</body>
+
+</html>

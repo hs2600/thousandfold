@@ -1,0 +1,92 @@
+---
+layout: main
+title: Welcome
+---
+
+
+<div class="container-fluid" style="padding: 0px;">
+  <div class="header-container" style="text-align: center;">
+    <div style="padding: 50px; background-color: rgba(154,99,63,0.65);">
+      <div class="d-none d-lg-block" style="height:150px;"></div>
+      <div class="row">
+        <h2 style="font-family: Times New Roman; color: white;">
+        <i class="fa fa-quote-left" aria-hidden="true"></i><i><b>May the Lord, the God of your ancestors, increase you a thousand times and bless you as he has promised!</b></i>
+        <i class="fa fa-quote-right" aria-hidden="true"></i>
+        </h2>
+      </div>
+      <div class="d-none d-lg-block" style="height:150px"></div>
+    </div>      
+  </div>
+</div>
+
+<div class="container">
+  <div class="col">
+    {% assign products = site.data.products | where_exp:"product","product.category != 'kids' and product.tag == 'Featured' or product.tag == 'Sale'" | where:"available", "true" | sort:"product.id" | reverse %}
+
+    <div class="row" style="padding-left: 15px; padding-top: 15px;">
+      <h1>Featured Products</h1>
+    </div>  
+    <div class="row" style="padding: 15px;">
+      {% for product in products limit:6 %}
+        <div class="col-md-4 img-container" style="padding: 0px;">
+        <a href="{{ site.baseurl }}/{{ product.category }}/{{ product.subcategory }}/{{ product.title | downcase | replace: " ", "-" | replace: ":", "" }}/">
+        <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-preview" style="width: 100%;max-height: 250px;">
+        <span class="white-button middle" style="margin-bottom: 0px;">
+          View
+        </span>
+        </a>
+        
+        </div>
+      {% endfor %}
+    </div>
+  </div>     
+</div>
+<div class="d-none d-lg-block" style="height:30px"></div>
+
+<div class="container header-container d-none d-lg-block" style="background-color: white; padding: 0px; max-width: 1140px;">
+  <div style="background-color: rgba(154, 99, 63, 0.65);">  
+    <div style="text-align: center;">
+      <div style="height:150px"></div>
+      <div class="row">
+        <h2 style="font-family: Times New Roman; color: white;">
+          <b> Men's 2 for $25.00 each on select hoodies!!!!</b>
+        </h2>
+      </div>
+      <div class="d-none d-lg-block" style="height:150px"></div>
+    </div>
+    </div>
+</div>
+
+<div class="container">
+  <div class="col-md-12">
+    <div class="row">    
+    <img src="../img/inthistogether.jpg" width="100%">
+    <img src=../img/buy2v2.jpeg width=100%>
+  </div>
+</div>  
+</div>
+
+<div class="container ft_gray">
+  <div class="container">
+    <div class="col d-none d-lg-block">
+        <div class="row" style="background-image: url(../img/BeFunky-collage.jpg);
+          background-repeat: no-repeat!important;
+          background-position: center center!important;
+          background-size: 97.1%!important;
+          height: 650px;">
+          <div class="col" style="padding-top: 300px; text-align: center;">
+            <a href="/shop/">
+              <span class="white-button" style="width: 250px;">
+                Shop Now <span class="fa fa-shopping-cart"></span>
+              </span>
+            </a>     
+          </div>
+        </div>
+        
+        <div class="row" style="padding: 20px;">
+          <div class="fa-hover col-sm-6 col-md-6 col-lg-6">
+          </div>
+        </div>
+    </div>
+  </div>  
+</div>  
