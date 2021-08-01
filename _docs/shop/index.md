@@ -72,17 +72,17 @@ layout: default
       <div class="tab-pane fade active in" id="men">
         <div class="row">
           {% for product in men limit:6 %}
-            <div class="col-md-4 img-container" style="padding: 0px;">
+            <div class="col-md-4 img-container" style="padding: 10px;">
+            <span class="featured" style="position: absolute; top:45px;left:10px;z-index: 1; opacity: 0.7">{{ product.tag }}</span>
             <a href="{{ site.baseurl }}/{{ product.category }}/{{ product.subcategory }}/{{ product.title | downcase | replace: " ", "-" | replace: ":", "" }}/">
-            <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-preview" style="width: 100%;max-height: 250px;">
+            <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-preview" style="width: 100%;">
             <span class="white-button middle" style="margin-bottom: 30px;">
             View
             </span>
             </a>
-            <h2 class="product-titlex" style="font-size: 14px;"> {{ product.title }}</h2>
-            <hr style="width: 95%">
-            <span class="featured">{{ product.tag }}</span>
-            <span class="price">${{ product.price }}</span><br><br>
+            <span class="price">${{ product.price }}</span><br>
+            <span class="product-title" style="font-size: 14px;"> {{ product.title }}</span>
+            <hr style="margin-top: 10px; margin-bottom: 20px">
             </div>
           {% endfor %}
         </div>
@@ -90,17 +90,17 @@ layout: default
       <div class="tab-pane fade" id="women">
         <div class="row">
           {% for product in women limit:6 %}
-            <div class="col-md-4 img-container" style="padding: 0px;">
+            <div class="col-md-4 img-container" style="padding: 10px;">
+            <span class="featured" style="position: absolute; top:45px;left:10px;z-index: 1; opacity: 0.7">{{ product.tag }}</span>
             <a href="{{ site.baseurl }}/{{ product.category }}/{{ product.subcategory }}/{{ product.title | downcase | replace: " ", "-" | replace: ":", "" }}/">
-            <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-preview" style="width: 100%;max-height: 250px;">
+            <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-preview" style="width: 100%;">
             <span class="white-button middle" style="margin-bottom: 30px;">
             View
             </span>
             </a>
-            <h2 class="product-titlex" style="font-size: 14px;"> {{ product.title }}</h2>
-            <hr style="width: 95%">
-            <span class="featured">{{ product.tag }}</span>
-            <span class="price">${{ product.price }}</span><br><br>
+            <span class="price">${{ product.price }}</span><br>
+            <span class="product-title" style="font-size: 14px;"> {{ product.title }}</span>
+            <hr style="margin-top: 10px; margin-bottom: 20px">
             </div>
           {% endfor %}
         </div>
@@ -108,24 +108,23 @@ layout: default
       <div class="tab-pane fade" id="kids">
         <div class="row">
           {% for product in kids limit:4 %}
-            <div class="col-md-4 img-container" style="padding: 0px;">
+            <div class="col-md-4 img-container" style="padding: 10px;">
+            <span class="featured" style="position: absolute; top:45px;left:10px;z-index: 1; opacity: 0.7">{{ product.tag }}</span>
             <a href="{{ site.baseurl }}/{{ product.category }}/{{ product.subcategory }}/{{ product.title | downcase | replace: " ", "-" | replace: ":", "" }}/">
             <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-preview" style="width: 100%;">
             <span class="white-button middle" style="margin-bottom: 30px;">
             View
             </span>
             </a>
-            <h2 class="product-titlex" style="font-size: 14px;"> {{ product.title }}</h2>
-            <hr style="width: 95%">
-            <span class="featured">{{ product.tag }}</span>
-            <span class="price">${{ product.price }}</span><br><br>
-            </div>
+            <span class="price">${{ product.price }}</span><br>
+            <span class="product-title" style="font-size: 14px;"> {{ product.title }}</span>
+            <hr style="margin-top: 10px; margin-bottom: 20px">
+            </div>            
           {% endfor %}
         </div>
       </div>    
     </div>
 
-<hr>
   <div style="padding: 0px;">
     <div class="row" style="padding: 15px;">
       <div class="col-sm-6 col-md-6 col-lg-6" style="padding: 0px;">

@@ -8,11 +8,15 @@ title: Welcome
   <div class="header-container" style="text-align: center;">
     <div style="padding: 50px; background-color: rgba(154,99,63,0.65);">
       <div class="d-none d-lg-block" style="height:150px;"></div>
-      <div class="row">
-        <h2 style="font-family: Times New Roman; color: white;">
-        <i class="fa fa-quote-left" aria-hidden="true"></i><i><b>May the Lord, the God of your ancestors, increase you a thousand times and bless you as he has promised!</b></i>
+      <div class="row" style="font-family: Times New Roman; color: white;">
+        <h3 style="font-family: Times New Roman; color: white; font-size: 4vw">
+        <i class="fa fa-quote-left" aria-hidden="true"></i>
+        <i>
+          <b>May the Lord, the God of your ancestors, increase you a thousand times and bless you as he has promised!</b>
+        </i>
         <i class="fa fa-quote-right" aria-hidden="true"></i>
-        </h2>
+        </h3>
+        <h4 style="font-family: Times New Roman; color: white; font-size: 3vw">Deuteronomy 1:11</h4>
       </div>
       <div class="d-none d-lg-block" style="height:150px"></div>
     </div>      
@@ -23,22 +27,29 @@ title: Welcome
   <div class="col">
     {% assign products = site.data.products | where_exp:"product","product.category != 'kids' and product.tag == 'Featured' or product.tag == 'Sale'" | where:"available", "true" | sort:"product.id" | reverse %}
 
-    <div class="row" style="padding-left: 15px; padding-top: 15px;">
-      <h1>Featured Products</h1>
-    </div>  
     <div class="row" style="padding: 15px;">
-      {% for product in products limit:6 %}
+      <span style="width: 10px; font-family: 'Style Script', cursive; color: white; background-color: #f88379; padding-left: 50px; padding-right: 50px; font-size: 3.5vw;">
+        Greatness Collection</span>
+    </div>  
+
+    <div class="row" style="padding: 15px;">
+      {% for product in products limit:3 %}
         <div class="col-md-4 img-container" style="padding: 0px;">
         <a href="{{ site.baseurl }}/{{ product.category }}/{{ product.subcategory }}/{{ product.title | downcase | replace: " ", "-" | replace: ":", "" }}/">
-        <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-preview" style="width: 100%;max-height: 250px;">
+        <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-preview" style="width: 100%; max-height: 250px;">
         <span class="white-button middle" style="margin-bottom: 0px;">
           View
         </span>
-        </a>
-        
+        </a>        
         </div>
       {% endfor %}
     </div>
+
+    <div class="col-12 img-container" style="padding: 0px;">      
+      <a href="/men/hoodies"><img src="/img/2x25.png" width="100%" class="img-preview">
+      </a>
+      </div>
+
   </div>     
 </div>
 <div class="d-none d-lg-block" style="height:30px"></div>
@@ -46,47 +57,54 @@ title: Welcome
 <div class="container header-container d-none d-lg-block" style="background-color: white; padding: 0px; max-width: 1140px;">
   <div style="background-color: rgba(154, 99, 63, 0.65);">  
     <div style="text-align: center;">
-      <div style="height:150px"></div>
+      <div style="height:50px"></div>
       <div class="row">
         <h2 style="font-family: Times New Roman; color: white;">
           <b> Men's 2 for $25.00 each on select hoodies!!!!</b>
         </h2>
       </div>
-      <div class="d-none d-lg-block" style="height:150px"></div>
+      <div class="d-none d-lg-block" style="height:50px"></div>
     </div>
     </div>
 </div>
 
 <div class="container">
-  <div class="col-md-12">
-    <div class="row">    
-    <img src="../img/inthistogether.jpg" width="100%">
-    <img src=../img/buy2v2.jpeg width=100%>
+  <div class="row" style="border: 0px solid red; padding: 15px; padding-top: 35px;">
+    <div class="col-md-4 img-container" style="padding: 0px;">
+      <a href="/men/">
+      <img src="{{ site.baseurl }}/img/men.jpg" width="100%" class="img-preview">
+      <span class="middle-vis" style="background-color: white; color: black; width: 150px; padding: 8px; text-align: center; border-radius: 2px; border-bottom: 3px solid gray">
+      Men <span class="fa fa-arrow-circle-right"></span>
+      </span>
+      </a>              
+    </div>
+    <div class="col-md-4 img-container" style="padding: 0px;">
+      <a href="/women/">
+      <img src="{{ site.baseurl }}/img/women.jpg" width="100%" class="img-preview">
+      <span class="middle-vis" style="background-color: white; color: black; width: 150px; padding: 8px; text-align: center; border-radius: 2px; border-bottom: 3px solid gray">
+      Women <span class="fa fa-arrow-circle-right"></span>
+      </span>
+      </a>   
+    </div>
+    <div class="col-md-4 img-container" style="padding: 0px;">
+      <a href="/kids/">
+      <img src="{{ site.baseurl }}/img/kids.jpg" width="100%" class="img-preview">
+      <span class="middle-vis" style="background-color: white; color: black; width: 150px; padding: 8px; text-align: center; border-radius: 2px; border-bottom: 3px solid gray">
+      Kids <span class="fa fa-arrow-circle-right"></span>
+      </span>
+      </a>   
+    </div>        
   </div>
-</div>  
 </div>
 
-<div class="container ft_gray">
+<div class="container-fluid" style="background-color: #fffaf0; padding: 5px;">
   <div class="container">
-    <div class="col d-none d-lg-block">
-        <div class="row" style="background-image: url(../img/BeFunky-collage.jpg);
-          background-repeat: no-repeat!important;
-          background-position: center center!important;
-          background-size: 97.1%!important;
-          height: 650px;">
-          <div class="col" style="padding-top: 300px; text-align: center;">
-            <a href="/shop/">
-              <span class="white-button" style="width: 250px;">
-                Shop Now <span class="fa fa-shopping-cart"></span>
-              </span>
-            </a>     
-          </div>
-        </div>
-        
-        <div class="row" style="padding: 20px;">
-          <div class="fa-hover col-sm-6 col-md-6 col-lg-6">
-          </div>
-        </div>
+    <div class="row" style="padding-left: 15px; padding-right: 15px;">
+    <div class="col">
+      <img src="../img/inthistogether.jpg" width="100%">
+      <br>
+      <img src="../img/BeFunky-collage.jpg" width="100%">
     </div>
   </div>  
+  </div>
 </div>  
