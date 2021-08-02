@@ -11,10 +11,10 @@ permalink: /women/hoodies/
 {% endif %}
     <div class="row">
         {% for product in products %}
-        <div class="col-md-4 img-container" style="height:250px;">
+        <div class="col-md-4 img-container">
         <span class="featured" style="position: absolute; top:30px;left:30px;z-index: 1; opacity: 0.7">{{ product.tag }}</span>
         <a href="{{ site.baseurl }}/{{ product.category }}/{{ product.subcategory }}/{{ product.title | downcase | replace: " ", "-" | replace: ":", "" }}/">
-        <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-thumbnail" style="max-height:175px">
+        <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-thumbnail" style="width: 100%;">
         <span class="white-button middle" style="margin-bottom: 30px;">
         View
         </span>

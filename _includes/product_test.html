@@ -4,6 +4,47 @@
         <h3>[{{ product.id }}] - {{ product.title }} (${{ product.price }})</h3>
         <h5><i>{{ product.category }} > {{ product.subcategory }}</i></h5>
         <i>Colors: {{ product.colors | join: ', ' }}</i><br>
+
+        {% for colorx in product.colors %}
+            {% if colorx == "Burgundy" %}
+                {% assign color = "#800020" %}
+            {% elsif colorx == "Heather Dark Gray" %}
+                {% assign color = "#353638" %}
+            {% elsif colorx == "Heather Gray" %}
+                {% assign color = "#767691" %}
+            {% elsif colorx == "Heather Blue" %}
+                {% assign color = "#667CDB" %}
+            {% elsif colorx == "Pop Blue" %}
+                {% assign color = "#7AB4F1" %}
+            {% elsif colorx == "Rustic Green" %}
+                {% assign color = "#61969C" %}
+            {% elsif colorx == "Vibrant Red" %}
+                {% assign color = "#DD2229" %}
+            {% elsif colorx == "Soft Pink" %}
+                {% assign color = "#EFBFD8" %}                
+            {% else %}
+                {% assign color = colorx %}
+            {% endif %}
+
+            {% if color contains "/" %}
+                {% assign colors = color | split: "/" %}
+                <span class="dot_split" style="background: linear-gradient(
+                    to right, 
+                    {% for color in colors limit:1 %}            
+                    {{ color }} 0%,
+                    {{ color }} 50%,
+                    {% endfor %}
+                    {% for color in colors offset:1 %}            
+                    {{ color }} 50%,
+                    {{ color }} 100%
+                    {% endfor %}            
+                );">
+                </span>
+            {% else %}
+                <span class="dot" style="background-color: {{ color }}"></span>
+            {% endif %}
+        {% endfor %}
+
         <p class="product__description">{{ product.description }}</p>
         <HR>
             <span class="featured">{{ product.tag }}</span>
