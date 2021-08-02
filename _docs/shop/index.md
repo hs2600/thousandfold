@@ -82,6 +82,46 @@ layout: default
             </a>
             <span class="price">${{ product.price }}</span><br>
             <span class="product-title" style="font-size: 14px;"> {{ product.title }}</span>
+            {% for colorx in product.colors %}
+                {% if colorx == "Burgundy" %}
+                    {% assign color = "#800020" %}
+                {% elsif colorx == "Heather Dark Gray" %}
+                    {% assign color = "#353638" %}
+                {% elsif colorx == "Heather Gray" %}
+                    {% assign color = "#767691" %}
+                {% elsif colorx == "Heather Blue" %}
+                    {% assign color = "#667CDB" %}
+                {% elsif colorx == "Denim Blue" %}
+                    {% assign color = "#7CB6F2" %}                    
+                {% elsif colorx == "Pop Blue" %}
+                    {% assign color = "#7AB4F1" %}
+                {% elsif colorx == "Rustic Green" %}
+                    {% assign color = "#61969C" %}
+                {% elsif colorx == "Vibrant Red" %}
+                    {% assign color = "#DD2229" %}
+                {% elsif colorx == "Soft Pink" %}
+                    {% assign color = "#EFBFD8" %}                
+                {% else %}
+                    {% assign color = colorx %}
+                {% endif %}
+                {% if color contains "/" %}
+                    {% assign colors = color | split: "/" %}
+                    <span class="dot_split" style="background: linear-gradient(
+                        to right, 
+                        {% for color in colors limit:1 %}            
+                        {{ color }} 0%,
+                        {{ color }} 50%,
+                        {% endfor %}
+                        {% for color in colors offset:1 %}            
+                        {{ color }} 50%,
+                        {{ color }} 100%
+                        {% endfor %}            
+                    );">
+                    </span>
+                {% else %}
+                    <span class="dot" style="background-color: {{ color }}"></span>
+                {% endif %}
+            {% endfor %}             
             <hr style="margin-top: 10px; margin-bottom: 20px">
             </div>
           {% endfor %}
@@ -90,7 +130,7 @@ layout: default
       <div class="tab-pane fade" id="women">
         <div class="row">
           {% for product in women limit:6 %}
-            <div class="col-md-4 img-container" style="padding: 10px;">
+            <div class="col-md-4 img-container" style="min-height: 395px; padding: 10px;">
             <span class="featured" style="position: absolute; top:45px;left:10px;z-index: 1; opacity: 0.7">{{ product.tag }}</span>
             <a href="{{ site.baseurl }}/{{ product.category }}/{{ product.subcategory }}/{{ product.title | downcase | replace: " ", "-" | replace: ":", "" }}/">
             <img src="{{ site.baseurl }}/img/{{ product.image }}" class="img-preview" style="width: 100%;">
@@ -100,6 +140,46 @@ layout: default
             </a>
             <span class="price">${{ product.price }}</span><br>
             <span class="product-title" style="font-size: 14px;"> {{ product.title }}</span>
+            {% for colorx in product.colors %}
+                {% if colorx == "Burgundy" %}
+                    {% assign color = "#800020" %}
+                {% elsif colorx == "Heather Dark Gray" %}
+                    {% assign color = "#353638" %}
+                {% elsif colorx == "Heather Gray" %}
+                    {% assign color = "#767691" %}
+                {% elsif colorx == "Heather Blue" %}
+                    {% assign color = "#667CDB" %}
+                {% elsif colorx == "Denim Blue" %}
+                    {% assign color = "#7CB6F2" %}                    
+                {% elsif colorx == "Pop Blue" %}
+                    {% assign color = "#7AB4F1" %}
+                {% elsif colorx == "Rustic Green" %}
+                    {% assign color = "#61969C" %}
+                {% elsif colorx == "Vibrant Red" %}
+                    {% assign color = "#DD2229" %}
+                {% elsif colorx == "Soft Pink" %}
+                    {% assign color = "#EFBFD8" %}                
+                {% else %}
+                    {% assign color = colorx %}
+                {% endif %}
+                {% if color contains "/" %}
+                    {% assign colors = color | split: "/" %}
+                    <span class="dot_split" style="background: linear-gradient(
+                        to right, 
+                        {% for color in colors limit:1 %}            
+                        {{ color }} 0%,
+                        {{ color }} 50%,
+                        {% endfor %}
+                        {% for color in colors offset:1 %}            
+                        {{ color }} 50%,
+                        {{ color }} 100%
+                        {% endfor %}            
+                    );">
+                    </span>
+                {% else %}
+                    <span class="dot" style="background-color: {{ color }}"></span>
+                {% endif %}
+            {% endfor %}               
             <hr style="margin-top: 10px; margin-bottom: 20px">
             </div>
           {% endfor %}
@@ -118,6 +198,46 @@ layout: default
             </a>
             <span class="price">${{ product.price }}</span><br>
             <span class="product-title" style="font-size: 14px;"> {{ product.title }}</span>
+            {% for colorx in product.colors %}
+                {% if colorx == "Burgundy" %}
+                    {% assign color = "#800020" %}
+                {% elsif colorx == "Heather Dark Gray" %}
+                    {% assign color = "#353638" %}
+                {% elsif colorx == "Heather Gray" %}
+                    {% assign color = "#767691" %}
+                {% elsif colorx == "Heather Blue" %}
+                    {% assign color = "#667CDB" %}
+                {% elsif colorx == "Denim Blue" %}
+                    {% assign color = "#7CB6F2" %}                    
+                {% elsif colorx == "Pop Blue" %}
+                    {% assign color = "#7AB4F1" %}
+                {% elsif colorx == "Rustic Green" %}
+                    {% assign color = "#61969C" %}
+                {% elsif colorx == "Vibrant Red" %}
+                    {% assign color = "#DD2229" %}
+                {% elsif colorx == "Soft Pink" %}
+                    {% assign color = "#EFBFD8" %}                
+                {% else %}
+                    {% assign color = colorx %}
+                {% endif %}
+                {% if color contains "/" %}
+                    {% assign colors = color | split: "/" %}
+                    <span class="dot_split" style="background: linear-gradient(
+                        to right, 
+                        {% for color in colors limit:1 %}            
+                        {{ color }} 0%,
+                        {{ color }} 50%,
+                        {% endfor %}
+                        {% for color in colors offset:1 %}            
+                        {{ color }} 50%,
+                        {{ color }} 100%
+                        {% endfor %}            
+                    );">
+                    </span>
+                {% else %}
+                    <span class="dot" style="background-color: {{ color }}"></span>
+                {% endif %}
+            {% endfor %}    
             <hr style="margin-top: 10px; margin-bottom: 20px">
             </div>            
           {% endfor %}

@@ -152,6 +152,8 @@ layout: docs-notitle
                             {% assign color = "#767691" %}
                         {% elsif colorx == "Heather Blue" %}
                             {% assign color = "#667CDB" %}
+                        {% elsif colorx == "Denim Blue" %}
+                            {% assign color = "#7CB6F2" %}                    
                         {% elsif colorx == "Pop Blue" %}
                             {% assign color = "#7AB4F1" %}
                         {% elsif colorx == "Rustic Green" %}
@@ -180,7 +182,7 @@ layout: docs-notitle
                         {% else %}
                             <span class="dot" style="background-color: {{ color }}"></span>
                         {% endif %}
-                    {% endfor %}                    
+                    {% endfor %}                   
                     <hr style="margin-top: 10px; margin-bottom: 20px">
                     </div>
                 {% endfor %}
