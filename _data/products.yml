@@ -24,7 +24,8 @@
   - IMG_3393.jpg
   colors:
   - Brown/Black
-  - Black/Silver
+  - Black/Black
+  - White/White
   available: true    
 
 - id: 3
@@ -74,8 +75,8 @@
 
 - id: 6
   title: VICTORY 
-  description: <i>Was $39.99 (25% off!) </i> <br> A burgundy, 50/50 poly/cotton blend sweatshirt.
-  price: 29.99
+  description: Your's is the victory. A burgundy, 50/50 poly/cotton blend sweatshirt.
+  price: 40.00
   category: men
   tag: Sale
   subcategory: hoodies
@@ -91,7 +92,7 @@
 - id: 7
   title: be humbled
   description: Denim blue, 50/50 poly/cotton blend hoodie. II Chronicles 7:14 embroidered on hood.
-  price: 37
+  price: 40
   category: men
   subcategory: hoodies
   tag: Featured
@@ -106,7 +107,7 @@
 - id: 8
   title: PRAY
   description: <i>Was $39.99 (25% off!) </i> <br> Vibrant red, 50/50 poly/cotton blend hoodie with vinyl print featuring Isaiah 43:18.
-  price: 30
+  price: 35
   category: men
   tag: Sale
   subcategory: hoodies
@@ -119,19 +120,23 @@
 
 - id: 9
   title: ALL HAIL KING JESUS 
-  description: <i>Was 59.99 (35% off) </i> <br> Hoodie is a 50/50 poly/cotton blend available in multiple colors. Praying hands image featured on front of hoodie. Front of sleeve 'All Hail King Jesus.' Back of sleeve 'Get Behind Me Satan.' Shoulder 'Pray.' symbol. Mark 8:36 embroidered on hood.
-  price: 40
+  description: Hoodie is a 50/50 poly/cotton blend available in multiple colors. Praying hands image featured on front of hoodie. Front of sleeve 'All Hail King Jesus.' Back of sleeve 'Get Behind Me Satan.' Shoulder 'Pray.' symbol. Mark 8:36 embroidered on hood.
+  price: 60
   category: men
   subcategory: hoodies
-  tag: 
+  tag: Featured
   image: 
+  - ALLHAILTHEKING1.JPG
   thumbnails:
-  - 
+  - ALLHAILTHEKING1.JPG
+  - ALLHAILTHEKING2.JPG
+  - ALLHAILTHEKING3.JPG
+  - ALLHAILTHEKING4.JPG
   colors:
   - Black
   - Navy
   - White
-  available: false
+  available: true
 
 - id: 10
   title: Kingdom Come Men's T
@@ -198,8 +203,8 @@
   available: true  
 
 - id: 14
-  title: ABERRANT
-  description: Aberrant women's t shirt is 100% cotton with praying hands image on front, featuring John 1:5 with vinyl print on back.
+  title: PRAISE THE KING
+  description: PRAISE THE KING women's t shirt is 100% cotton with praying hands image on front, featuring John 1:5 with vinyl print on back.
   price: 24.99
   category: women
   subcategory: tops
@@ -303,12 +308,12 @@
   available: false
 
 - id: 21
-  title: Great
+  title: Greatness
   description: 50/50 poly/cotton blend hoodie
   price: 30
   category: men
   subcategory: hoodies
-  tag: Featured
+  tag: 
   image: IMG_9640.jpg
   thumbnails:
   - IMG_9555.jpg
@@ -324,7 +329,7 @@
   price: 35
   category: men
   subcategory: hoodies
-  tag: Featured
+  tag:
   image: IMG_0059.jpg
   thumbnails:
   - IMG_0233.jpg
@@ -340,7 +345,7 @@
   price: 35
   category: men
   subcategory: hoodies
-  tag: Featured
+  tag:
   image: IMG_9826.jpg
   thumbnails:
   - IMG_9742.jpg
@@ -348,3 +353,55 @@
   colors: 
   - black
   available: true
+  
+  - id: 24
+    title: Green Pastures
+    description: Psalms 23, He makes me lie down in green pastures... 50/50 poly/cotton blend
+    price: 30
+    category: men
+    subcategory: hoodies
+    tag: Featured
+    img: 
+    - GREENPASTURES.jpg
+    thumbnails: 
+    - GREENPASTURES.jpg
+    - GREENPASTURES2.JPG
+    - GREENPASTURES3.JPG
+    colors:
+    - Forest Green
+    available: true
+    
+    - id: 25
+      title: Worthy
+      description: He calls you worthy.. 50/50 poly/cotton blend
+      price: 30
+      category: men
+      subcategory: hoodies
+      tag: Featured
+      img: 
+      - Worthy2.JPG
+      thumbnails:
+      - Worthy.JPG
+      - Worthy2.JPG
+      - Worthy3.JPG
+      colors:
+      - Black
+      - Lifeguard Red
+      available: true
+      
+      - id: 26
+        title: Earthen Vessel
+        description: II Corinthians 4:7-11, Isaiah 52:11, You are carrying articles of the Lord's House. You are the Earthen Vessel. The treasure is within you. 50/50 poly cotton blend
+        price: 30
+        category: men
+        subcategory: hoodies
+        tag: Featured
+        img: 
+        - EARTHENVESSEL.jpg
+        thumbnails:
+        - EARTHENVESSEL.jpg
+        - EARTHENVESSEL2.JPG
+        colors:
+        - Brown
+        available: true
+    
