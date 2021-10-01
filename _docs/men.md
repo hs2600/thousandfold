@@ -132,7 +132,7 @@ layout: docs-notitle
         </div>
         <div class="tab-pane fade" id="hoodies">
             <div class="row">
-                {% for product in hoodies limit:8 %}
+                {% for product in hoodies limit:12 %}
                     <div class="col-md-3 img-container" style="margin: 0px;">
                     <span class="featured" style="position: absolute; top:30px;left:30px;z-index: 1; opacity: 0.7">{{ product.tag }}</span>
                     <a href="{{ site.baseurl }}/{{ product.category }}/{{ product.subcategory }}/{{ product.title | downcase | replace: " ", "-" | replace: ":", "" }}/">

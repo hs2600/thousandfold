@@ -54,7 +54,7 @@ layout: default
     </div>        
   </div>
 
-  {% assign men = site.data.products | where:"category","men" | where_exp:"product","product.tag == 'Sale' or product.tag == 'Featured'" | where:"available", "true" | sort:"product.id" | reverse %}
+  {% assign men = site.data.products | where:"category","men" | where_exp:"product","product.tag == 'New!' or product.tag == 'Featured' or product.tag == 'Sale'" | where:"available", "true" | sort:"product.id" | reverse %}
   {% assign women = site.data.products | where:"category","women" | where_exp:"product","product.tag == 'Sale' or product.tag == 'Featured'" | where:"available", "true" | sort:"product.id" | reverse %}
   {% assign kids = site.data.products | where:"category","kids" | where_exp:"product","product.tag == 'Sale' or product.tag == 'Featured'" | where:"available", "true" | sort:"product.id" | reverse %}
 

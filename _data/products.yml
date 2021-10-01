@@ -125,13 +125,11 @@
   category: men
   subcategory: hoodies
   tag: Featured
-  image: 
-  - ALLHAILTHEKING1.JPG
+  image: ALLHAILTHEKING2.jpg
   thumbnails:
-  - ALLHAILTHEKING1.JPG
-  - ALLHAILTHEKING2.JPG
-  - ALLHAILTHEKING3.JPG
-  - ALLHAILTHEKING4.JPG
+  - ALLHAILTHEKING1.jpg
+  - ALLHAILTHEKING3.jpg
+  - ALLHAILTHEKING4.jpg
   colors:
   - Black
   - Navy
@@ -354,54 +352,48 @@
   - black
   available: true
   
-  - id: 24
-    title: Green Pastures
-    description: Psalms 23, He makes me lie down in green pastures... 50/50 poly/cotton blend
-    price: 30
-    category: men
-    subcategory: hoodies
-    tag: Featured
-    img: 
-    - GREENPASTURES.jpg
-    thumbnails: 
-    - GREENPASTURES.jpg
-    - GREENPASTURES2.JPG
-    - GREENPASTURES3.JPG
-    colors:
-    - Forest Green
-    available: true
-    
-    - id: 25
-      title: Worthy
-      description: He calls you worthy.. 50/50 poly/cotton blend
-      price: 30
-      category: men
-      subcategory: hoodies
-      tag: Featured
-      img: 
-      - Worthy2.JPG
-      thumbnails:
-      - Worthy.JPG
-      - Worthy2.JPG
-      - Worthy3.JPG
-      colors:
-      - Black
-      - Lifeguard Red
-      available: true
-      
-      - id: 26
-        title: Earthen Vessel
-        description: II Corinthians 4:7-11, Isaiah 52:11, You are carrying articles of the Lord's House. You are the Earthen Vessel. The treasure is within you. 50/50 poly cotton blend
-        price: 30
-        category: men
-        subcategory: hoodies
-        tag: Featured
-        img: 
-        - EARTHENVESSEL.jpg
-        thumbnails:
-        - EARTHENVESSEL.jpg
-        - EARTHENVESSEL2.JPG
-        colors:
-        - Brown
-        available: true
-    
+- id: 24
+  title: Green Pastures
+  description: Psalms 23, He makes me lie down in green pastures... 50/50 poly/cotton blend
+  price: 30
+  category: men
+  subcategory: hoodies
+  tag: New!
+  image: GREENPASTURES.jpg
+  thumbnails: 
+  - GREENPASTURES2.jpg
+  - GREENPASTURES3.jpg
+  colors:
+  - Forest Green
+  available: true
+  
+- id: 25
+  title: Worthy
+  description: He calls you worthy.. 50/50 poly/cotton blend
+  price: 30
+  category: men
+  subcategory: hoodies
+  tag: New!
+  image: Worthy2.jpg
+  thumbnails:
+  - Worthy.jpg
+  - Worthy3.jpg
+  colors:
+  - Black
+  - Lifeguard Red
+  available: true
+  
+- id: 26
+  title: Earthen Vessel
+  description: II Corinthians 4:7-11, Isaiah 52:11, You are carrying articles of the Lord's House. You are the Earthen Vessel. The treasure is within you. 50/50 poly cotton blend
+  price: 30
+  category: men
+  subcategory: hoodies
+  tag: New!
+  image: EARTHENVESSEL.jpg
+  thumbnails:
+  - EARTHENVESSEL2.jpg
+  colors:
+  - Brown
+  available: true
+
